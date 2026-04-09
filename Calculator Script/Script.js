@@ -12,26 +12,20 @@ function calculate() {
         return;
     }
 
-    switch (Options, calculateBtn) {
-        case "add" && calculateBtn:
-            result.textContent = `Result: ${num1 + num2}`;
-            break;
-        case "subtract" && calculateBtn:
-            result.textContent = `Result: ${num1 - num2}`;
-            break;
-        case "multiply" && calculateBtn:
-            result.textContent = `Result: ${num1 * num2}`;
-            break;
-        case "divide" && calculateBtn:
-            if (num2 === 0) {
-                result.textContent = "Cannot divide by zero.";
-            } else {
-                result.innerHTML = `Result: ${num1 / num2}`;
-            }
-            break;
-        default:
-            result.textContent = "Please select a valid operation.";
-
+    if (Options === "add" && calculateBtn) {
+        result.textContent = `Result: ${num1 + num2}`;
+    } else if (Options === "subtract" && calculateBtn) {
+        result.textContent = `Result: ${num1 - num2}`;
+    } else if (Options === "multiply" && calculateBtn) {
+        result.textContent = `Result: ${num1 * num2}`;
+    } else if (Options === "divide" && calculateBtn) {
+        if (num2 === 0) {
+            result.textContent = "Cannot divide by zero.";
+        } else {
+            result.textContent = `Result: ${num1 / num2}`;
+        }
+    } else {
+        result.textContent = "Please select a valid operation.";
     }
 
 
