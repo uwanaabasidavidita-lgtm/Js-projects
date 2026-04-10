@@ -1,0 +1,19 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" name="Length" id="length" placeholder="Password Length">
+    <button id="passwordGen" onclick="passwordGenerator()">Generate Password</button><br>
+    <input type="checkbox" id="includeUppercase">Include Uppercase Letters<br>
+    <input type="checkbox" id="includeLowercase">Include Lowercase Letters<br>
+    <input type="checkbox" id="includeNumbers">Include Numbers<br>
+    <input type="checkbox" id="includeSymbols">Include Symbols<br>
+    
+    <p id="passwordDisplay" onclick="passwordGenerator()"></p>
+    <script src="script.js"></script>
+ </body>
+ </html>
