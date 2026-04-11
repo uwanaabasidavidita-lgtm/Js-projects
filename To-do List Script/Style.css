@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Explora&family=Felipa&family=Inter:ital,opsz,wght@0,14..32,200;1,14..32,200&display=swap');
+
+#taskList{
+font-size: large;
+font-family: 'Inter', sans-serif;
+}
+#taskInput{
+    font-size: large;
+    font-family: 'Inter', sans-serif;
+}
+#addTaskBtn{
+    font-size: small;
+    font-family: 'Inter', sans-serif;
+}
