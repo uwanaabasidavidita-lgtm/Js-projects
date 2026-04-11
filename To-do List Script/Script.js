@@ -10,7 +10,7 @@ function addTask() {
         console.log('Task cannot be empty');
         return;
     }
-    taskList.innerHTML += `<li> <input type="checkbox" id ="showCompleted"> ${taskText} </li> `;
+    taskList.innerHTML += `<ul> <li> <input type="checkbox" id ="showCompleted"> ${taskText} </li> </ul> `;
     taskInput.value = '';
     const checkboxes = document.querySelectorAll('#showCompleted');
     checkboxes.forEach(checkbox => {
