@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'Kenjiro';
+    src: url(Fonts/MandarianFood-lX9d.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'BMJUA';
+    src: url(Fonts/BMJUA_otf.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Fastfoodfont';
+    src: url(Fonts/MEMENU.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'AvacadoFont';
+    src: url(Fonts/PistolGripPump.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Nicepeoplefont';
+    src: url(Fonts/fledgling-sb.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Nicepeoplefont2';
+    src: url(Fonts/Sudbury\ Basin.otf) format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Almendra+Display&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Felipa&family=Hachi+Maru+Pop&family=Inter:ital,opsz,wght@0,14..32,200;1,14..32,200&family=Modak&display=swap');
+:root {
+    --primary-color: #ff6f61;
+    --secondary-color: #c6ddf7;
+    --background-color: #f5f5f5;
+    --text-color: #636363;
+    --alfredo-color: #fff8dc;
+    --rissoto-color: #f5deb3;
+    --tiramisu-color: #d2b48c;
+    --Moules-color: #161616;
+    --Carbonnade-Flamande-color: #8b3913;
+    --Boeuf-Bourguignon-color: #8b3b13;
+    --Salade-Lyonnaise-color: #68de00e8;
+    --Rattatouille-color1: #68de00e8;
+    --Rattatouille-color2: #ff6f61;
+    --Rattatouille-color3: #fff200;
+    --Lancashire-Hotpot-color: #f8ec80;
+    --Pan-Haggerty-color: #f8ec80;
+    --Yorkshire-Pudding-color: #ae5700d1;
+    --Shepards-Pie-color: #ae5700d1;
+    --Sushi-color: #ffffff;
+    --Udon-color1: #F0CD75; /*Kawaii Gold*/
+    --Udon-color2: #5B5752; /*Peppery*/
+    --Udon-colour3: #FFFFFF; /*Snowy*/
+    --Udon-color4: #341515; /*Cedar*/
+    --Ramen-color1:#341515; /*Cedar*/
+    --Ramen-color2:#B5210B; /*Candy Cane Red*/
+    --Ramen-color3:#F9BF58; /*Saffron(Xona)*/
+    --Mochi-color: #F66985; /*Lolipop Pink*/
+    --Mochi-color2: #F3F4EF; /*Carrara White*/
+    --Xialongbao-outlinecolor: #FFFBF9; /*Soapstone*/
+    --Xialongbao-color: #055989; /*Venice Blue*/
+    --Xialongbao-color2: #593A2C; /*Authentic Coffee*/
+    --Xialongbao-outlinecolor2: #F89D1F; /*Perfect Orange*/
+    --Peking-duck-color: #6e483f; /*Creamy Brown*/
+    --Peking-duck-outlinecolor: #646463; /*Storm Dust*/
+    --Dim-Sum-color: #FCF4DC; /*Pearl Lusta*/
+    --Dim-Sum-color2: #9dce86; /*Matcha Green*/
+    --Dim-Sum-outlinecolor: #8c4a20; /*Light Ochre*/
+    --Roujiamo-color: #e8e1d0; /*Spring Wood*/
+    --Roujiamo-outlinecolor: #bf8852; /*Mona Brown*/
+    --Tteokbokki-color: #f85c08; /*Rosé Orange*/
+    --Tteobokki-outlinecolor:  #cdceca; /*Dusty Grey*/
+    --Bibimbap-color: #C2955D; /*Twine*/
+    --Bibimbap-outlinecolor: #593A2C; /*Lighter Brown*/
+    --Bibimbap-outlinecolor2: #FFFCEA; /*Half Pearl Lusta*/
+    --Bibimbap-color2: #e6ae3a; /*Eggcellent Gold*/
+    --Japchae-color: #C2955D; /*Twine*/
+    --Japchae-outlinecolor: #130A06; /*Maire*/
+    --Japchae-color2: #FFFCEA; /*Half Pearl Lusta*/
+    --Mandu-color: #FFFCEA; /*Half Pearl Lusta*/
+    --Mandu-outlinecolor: #593A2C; /*Lighter Brown*/
+    --Mandu-outlinecolor2: #C2955D; /*Twine*/
+    --Gumbo-color: #593A2C; /*AUthentic Coffee*/
+    --Gumbo-outlinecolor: #7b2424; /*Stew Red*/
+    --Gumbo-color2: #FFFCEA; /*Half Pearl Lusta*/
+    --Lobster-Roll-color: #ab753f; /*Crispy Brown*/
+    --Lobster-Roll-color2:#FFFCEA; /*Half Pearl Lusta*/
+    --Lobster-Roll-outlinecolor: #b32c12; /*Royal Red*/
+    --Spicy-Chicken-Sandwich-color: #dda33d; /*Luminous Yellow*/
+    --Spicy-Chicken-Sandwich-outlinecolor:#FFFCEA; /*Half Pearl Lusta*/
+    --Brownie-Sundae-outlinecolor: #a3743b; /*Caramel Brown*/
+    --Brownie-Sundae-color: #FFFCEA; /*Half Pearl Lusta*/
+    --Brownie-Sundae-color2: #5a392a; /*Brownie Brown*/
+    --Tamales-color: #abfa74; /*Emerald Green*/
+    --Tamales-outlinecolor: #787e79; /*Smoke Grey*/
+    --Tamales-color2: #f2d763; /*Kentucky Gold*/
+    --Barbacoa-tacos-color: #f2d763; /*Kentucky Gold*/
+    --Barbacoa-tacos-outlinecolor: #DEC196; /*Brandy*/
+    --Barbacoa-tacos-color2: #4ba95d; /*Jungle Green*/
+    --Gorditas-color: #e8c630; /*Kentucky Gold*/
+    --Gorditas-outlinecolor: #C2452D; /*Clay Red*/
+    --Ceviche-color: #fcedb3;/*Lemon Chiffon*/
+    --Ceviche-outlinecolor: #f8ea5d; /*Corn Yellow*/
+    --Ceviche-color2: #f69b31; /*Glassy Orange*/
+    --Poutine-color: #c17648; /*Gravy Brown*/
+    --Poutine-outlinecolor: #FFFCEA; /*Half Pearl Lusta*/
+    --Poutine-color2: #454442; /*Sleepy Grey*/
+    --Tourtière-color: #b06a40; /*Crispy Brown*/
+    --Tourtière-outlinecolor: #C4C4C4; /*Silver*/
+    --Touton-color: #FFF275; /*Butter Yellow*/
+    --Touton-outlinecolor: #b06a40; /*Crispy Brown*/
+    --Touton-color2: #111810; /*Nature Black*/
+    --Touton-outlinecolor2: #FFFCEA; /*Half Pearl Lusta*/
+    --Bison-Burger-color: #edd566; /*Burger Yellow*/
+    --Bison-Burger-color2: #b06a40; /*Crispy Brown*/
+    --Bison-Burger-outlinecolor: #5a392a; /*Brownie Brown*/
+    --outline-color: #000000; 
+    --accent-color: #ffcc00;
+}
+.app {
+    align-items: center;
+    padding: 20px 20px;
+    border-radius: 5px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Modak', cursive;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.header h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    font-family: 'Inter', 'sans-serif';
+}
+.h3{
+    font-family: 'Felipa', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.tableofcontents {
+    margin-bottom: 20px;
+    font-family: 'Inter', 'sans-serif';
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.Picture-Alignement{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+   
+}
+/*European Styles*/
+/*Italian Styles*/
+.alfredo-recipe{
+    font-family: 'Felipa', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.alfredo-recipe-header {
+    font-family: 'Felipa', cursive;
+    color: var(--alfredo-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.rissoto-recipe-header {
+    font-family: 'Felipa', cursive;
+    color: var(--rissoto-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.tiramisu-recipe-header {
+    font-family: 'Felipa', cursive;
+    color: var(--tiramisu-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/*French Styles*/
+.French-recipes{
+    font-family: 'Almendra Display', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Moules-recipe-header {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Moules-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Carbonnade-Flamande-recipe-header {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Carbonnade-Flamande-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Boeuf-Bourguignon-recipe-header { 
+    font-family: 'Almendra Display', cursive;
+    color: var(--Boeuf-Bourguignon-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Salade-Lyonnaise-recipe-header {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Salade-Lyonnaise-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Rattatouille-recipe-header1 {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Rattatouille-color1);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Rattatouille-recipe-header2 {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Rattatouille-color2);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Rattatouille-recipe-header3 {
+    font-family: 'Almendra Display', cursive;
+    color: var(--Rattatouille-color3);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+/*English Styles*/
+.English-recipes{
+    font-family: 'Bona Nova SC', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Lancashire-Hotpot-recipe-header {
+    font-family: 'Bona Nova SC', cursive;
+    color: var(--Lancashire-Hotpot-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Pan-Haggerty-recipe-header {
+    font-family: 'Bona Nova SC', cursive;
+    color: var(--Pan-Haggerty-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Yorkshire-Pudding-recipe-header {
+    font-family: 'Bona Nova SC', cursive;
+    color: var(--Yorkshire-Pudding-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.Shepards-Pie-recipe-header {
+    font-family: 'Bona Nova SC', cursive;
+    color: var(--Shepards-Pie-color);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+/*Asian Styles*/
+.Asian-recipes{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+/*Japanese Styles*/
+.Japanese-recipes{
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Sushi-recipe-header {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Sushi-color);
+    -webkit-text-stroke: 0.2px var(--outline-color);
+    font-size: 2.5em;
+    
+}
+.Udon-recipe-header1 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Udon-color1);
+    -webkit-text-stroke: 0.2px var(--Udon-color2);
+    font-size: 2.5em;
+    
+}
+.Udon-recipe-header2 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Udon-color4);
+    -webkit-text-stroke: 0.2px var(--Udon-colour3);
+    font-size: 2.5em;
+
+}
+.Ramen-recipe-header1 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Ramen-color2);
+    -webkit-text-stroke: 0.2px var(--Ramen-color1);
+    font-size: 2.5em;
+    
+}
+.Ramen-recipe-header2 {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Ramen-color3);
+    font-size: 2.5em;
+    
+}
+.Mochi-recipe-header {
+    font-family: 'Hachi Maru Pop', cursive;
+    color: var(--Mochi-color);
+    -webkit-text-stroke: 0.2px var(--Mochi-color2);
+    font-size: 2.5em;
+    
+}
+/*Chinese Styles*/
+.Chinese-recipes{
+    font-family: 'Kenjiro', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Xiaolongbao-recipe-header {
+    font-family: 'Kenjiro';
+    color: var(--Xialongbao-color);
+    -webkit-text-stroke: 0.2px var(--Xialongbao-outlinecolor);
+    font-size: 2.5em;
+    
+}
+.Xiaolongbao-recipe-header2 {
+    font-family: 'Kenjiro';
+    color: var(--Xialongbao-color2);
+    -webkit-text-stroke: 0.2px var(--Xialongbao-outlinecolor2);
+    font-size: 2.5em;
+    
+}
+.Peking-Duck-recipe-header {
+    font-family: 'Kenjiro';
+    color: var(--Peking-duck-color);
+    -webkit-text-stroke: 0.7px var(--Peking-duck-outlinecolor);
+    font-size: 2.5em;
+    
+}
+.Dim-sum-recipe-header {
+    font-family: 'Kenjiro';
+    color: var(--Dim-Sum-color);
+    -webkit-text-stroke: 0.2px var(--Dim-Sum-outlinecolor);
+    font-size: 2.5em;
+    
+}
+.Dim-sum-recipe-header2 {
+    font-family: 'Kenjiro';
+    color: var(--Dim-Sum-color2);
+    -webkit-text-stroke: 0.2px var(--Dim-Sum-outlinecolor);
+    font-size: 2.5em;  
+}
+.Roujiamo-recipe-header {
+    font-family: 'Kenjiro';
+    color: var(--Roujiamo-color);
+    -webkit-text-stroke: 0.35px var(--Roujiamo-outlinecolor);
+    font-size: 2.5em;
+    
+}
+/*Korean Styles*/
+.Korean-recipes{
+    font-family: 'BMJUA', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Tteokbokki-recipe-header {
+    font-family: 'BMJUA', cursive;
+    color: var(--Tteokbokki-color);
+    -webkit-text-stroke: 0.02px var(--Tteobokki-outlinecolor);
+    font-size: 2.5em;
+    
+}
+.Bibimbap-recipe-header {
+    font-family: 'BMJUA', cursive;
+    color: var(--Bibimbap-color);
+    -webkit-text-stroke: 0.02px var(--Bibimbap-outlinecolor);
+    font-size: 2.5em;
+    
+}
+.Bibimbap-recipe-header2 {
+    font-family: 'BMJUA', cursive;
+    color: var(--Bibimbap-color2);
+    -webkit-text-stroke: 0.02px var(--Bibimbap-outlinecolor2);
+    font-size: 2.5em;  
+}
+.Japchae-recipe-header {
+    font-family: 'BMJUA', cursive;
+    color: var(--Japchae-color);
+    -webkit-text-stroke: 0.02px var(--Japchae-outlinecolor);
+    font-size: 2.5em;   
+}
+.Japchae-recipe-header2 {
+    font-family: 'BMJUA', cursive;
+    color: var(--Japchae-color2);
+    -webkit-text-stroke: 0.02px var(--Japchae-outlinecolor);
+    font-size: 2.5em;  
+}
+.Mandu-recipe-header {
+    font-family: 'BMJUA', cursive;
+    color: var(--Mandu-color);
+    -webkit-text-stroke: 0.02px var(--Mandu-outlinecolor2);
+    font-size: 2.5em;   
+}
+.Mandu-recipe-header2 {
+    font-family: 'BMJUA', cursive;
+    color: var(--Mandu-outlinecolor);
+    -webkit-text-stroke: 0.02px var(--Mandu-outlinecolor2);
+    font-size: 2.5em;  
+}
+/*North-American Styles*/
+/*American Styles*/
+.American-recipes{
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Gumbo-recipe-header {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Gumbo-color);
+    -webkit-text-stroke: 0.02px var(--Gumbo-outlinecolor);
+    font-size: 2.5em;   
+}
+.Gumbo-recipe-header2 {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Gumbo-color2);
+    -webkit-text-stroke: 0.02px var(--Gumbo-outlinecolor);
+    font-size: 2.5em;  
+}
+.Lobster-Roll-recipe-header {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Lobster-Roll-color);
+    -webkit-text-stroke: 0.02px var(--Lobster-Roll-outlinecolor);
+    font-size: 2.5em;   
+}
+.Lobster-Roll-recipe-header2 {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Lobster-Roll-color2);
+    -webkit-text-stroke: 0.02px var(--Lobster-Roll-outlinecolor);
+    font-size: 2.5em;   
+}
+.Spicy-Chicken-Sandwich-recipe-header {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Spicy-Chicken-Sandwich-color);
+    -webkit-text-stroke: 0.02px var(--Spicy-Chicken-Sandwich-outlinecolor);
+    font-size: 2.5em;   
+}
+.Brownie-Sundae-recipe-header {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Brownie-Sundae-color);
+    -webkit-text-stroke: 0.02px var(--Brownie-Sundae-outlinecolor);
+    font-size: 2.5em;   
+}
+.Brownie-Sundae-recipe-header2 {
+    font-family: 'Fastfoodfont', cursive;
+    color: var(--Brownie-Sundae-color2);
+    -webkit-text-stroke: 0.02px var(--Brownie-Sundae-outlinecolor);
+    font-size: 2.5em;   
+}
+/*Mexican Styles*/
+.Mexican-recipes{
+    font-family: 'AvacadoFont', cursive;
+    color: var(--text-color);
+    font-size: 1.1em;
+}
+.Tamales-recipe-header {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Tamales-color);
+    -webkit-text-stroke: 0.02px var(--Tamales-outlinecolor);
+    font-size: 2.5em;   
+}
+.Tamales-recipe-header2 {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Tamales-color2);
+    -webkit-text-stroke: 0.02px var(--Tamales-outlinecolor);
+    font-size: 2.5em;   
+}
+.Barbacoa-tacos-recipe-header {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Barbacoa-tacos-color);
+    -webkit-text-stroke: 0.02px var(--Barbacoa-tacos-outlinecolor);
+    font-size: 2.5em;   
+}
+.Barbacoa-tacos-recipe-header2 {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Barbacoa-tacos-color2);
+    -webkit-text-stroke: 0.02px var(--Barbacoa-tacos-outlinecolor);
+    font-size: 2.5em;   
+}
+.Gorditas-recipe-header {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Gorditas-color);
+    -webkit-text-stroke: 0.02px var(--Gorditas-outlinecolor);
+    font-size: 4.4em;   
+}
+.Ceviche-recipe-header {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Ceviche-color);
+    -webkit-text-stroke: 0.02px var(--Ceviche-outlinecolor);
+    font-size: 3.0em;   
+}
+.Ceviche-recipe-header2 {
+    font-family: 'AvacadoFont', cursive;
+    color: var(--Ceviche-color2);
+    -webkit-text-stroke: 0.02px var(--Ceviche-outlinecolor);
+    font-size: 3.0em;   
+}
+/*Canadian Styles*/
+.Canadian-recipes{
+    font-family: 'Nicepeoplefont', cursive;
+    color: var(--text-color);
+    font-size: 1.5em;
+}
+.Poutine-recipe-header {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Poutine-color);
+    -webkit-text-stroke: 0.02px var(--Poutine-outlinecolor);
+    font-size: 2.5em;   
+}
+.Poutine-recipe-header2 {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Poutine-color2);
+    -webkit-text-stroke: 0.02px var(--Poutine-outlinecolor);
+    font-size: 2.5em;   
+}
+.Tourtière-recipe-header {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Tourtière-color);
+    -webkit-text-stroke: 0.02px var(--Tourtière-outlinecolor);
+    font-size: 2.5em;   
+}
+.Touton-recipe-header {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Touton-color);
+    -webkit-text-stroke: 0.02px var(--Touton-outlinecolor);
+    font-size: 2.5em;   
+}
+.Touton-recipe-header2 {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Touton-color2);
+    -webkit-text-stroke: 0.09px var(--Touton-outlinecolor2);
+    font-size: 2.5em;   
+}
+.Bison-Burger-recipe-header {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Bison-Burger-color);
+    -webkit-text-stroke: 0.02px var(--Bison-Burger-outlinecolor);
+    font-size: 2.5em;   
+}
+.Bison-Burger-recipe-header2 {
+    font-family: 'Nicepeoplefont2', cursive;
+    color: var(--Bison-Burger-color2);
+    -webkit-text-stroke: 0.02px var(--Bison-Burger-outlinecolor);
+    font-size: 2.5em;   
+}
